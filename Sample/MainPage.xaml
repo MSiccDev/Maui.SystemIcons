@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:systemicons="clr-namespace:MSiccDev.Libs.Maui.SystemIcons;assembly=MSiccDev.Libs.Maui.SystemIcons" xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="SystemIconsSample.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Hello, World!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Welcome to .NET Multi-platform App UI"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Click me"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked" 
+                ImageSource="{OnPlatform MacCatalyst={systemicons:SfSymbolsImageSource SymbolName='cursorarrow.click'},
+                                         iOS={systemicons:SfSymbolsImageSource SymbolName='hand.tap.fill'}}"
+                HorizontalOptions="Center">
+                <Button.Behaviors>
+                    <toolkit:IconTintColorBehavior TintColor="HotPink" />
+                </Button.Behaviors>
+            </Button>
+
+
+            <HorizontalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                 <Image
+                    HorizontalOptions="Center" HeightRequest="48" WidthRequest="48" Margin="8"
+                     Source="{OnPlatform MacCatalyst={systemicons:SfSymbolsImageSource SymbolName='house.fill'},
+                                         iOS={systemicons:SfSymbolsImageSource SymbolName='house.fill'}}">
+                    <Image.Behaviors>
+                        <toolkit:IconTintColorBehavior TintColor="Red" />
+                    </Image.Behaviors>
+                </Image>
+                <Image
+                     HorizontalOptions="Center" HeightRequest="48" WidthRequest="48" Margin="8"
+                     Source="{OnPlatform MacCatalyst={systemicons:SfSymbolsImageSource SymbolName='gear'},
+                                        iOS={systemicons:SfSymbolsImageSource SymbolName='gear'}}">
+                    <Image.Behaviors>
+                        <toolkit:IconTintColorBehavior TintColor="Green" />
+                    </Image.Behaviors>
+                </Image>
+                <Image
+                     HorizontalOptions="Center" HeightRequest="48" WidthRequest="48" Margin="8"
+                     Source="{OnPlatform MacCatalyst={systemicons:SfSymbolsImageSource SymbolName='person.circle.fill'},
+                                         iOS={systemicons:SfSymbolsImageSource SymbolName='person.circle.fill'}}">
+                    <Image.Behaviors>
+                        <toolkit:IconTintColorBehavior TintColor="Blue" />
+                    </Image.Behaviors>
+                </Image>
+                <Image
+                     HorizontalOptions="Center" HeightRequest="48" WidthRequest="48" Margin="8"
+                     Source="{OnPlatform MacCatalyst={systemicons:SfSymbolsImageSource SymbolName='airtag.fill'},
+                                         iOS={systemicons:SfSymbolsImageSource SymbolName='airtag.fill'}}">
+                    <Image.Behaviors>
+                        <toolkit:IconTintColorBehavior TintColor="Yellow" />
+                    </Image.Behaviors>
+                </Image>
+            </HorizontalStackLayout>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+

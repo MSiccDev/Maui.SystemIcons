@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1704.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSiccDev.Libs.Maui.SystemIcons", "src\MSiccDev.Libs.Maui.SystemIcons.csproj", "{8B045FFA-FA6B-48CD-85CE-E70267F704E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemIconsSample", "Sample\SystemIconsSample.csproj", "{3B65BD10-919C-4192-A5D0-9427A6122697}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B045FFA-FA6B-48CD-85CE-E70267F704E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B045FFA-FA6B-48CD-85CE-E70267F704E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B045FFA-FA6B-48CD-85CE-E70267F704E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B045FFA-FA6B-48CD-85CE-E70267F704E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B65BD10-919C-4192-A5D0-9427A6122697}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B65BD10-919C-4192-A5D0-9427A6122697}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B65BD10-919C-4192-A5D0-9427A6122697}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B65BD10-919C-4192-A5D0-9427A6122697}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1533F886-7A07-40D8-A6ED-EF10421A1A51}
+	EndGlobalSection
+EndGlobal
