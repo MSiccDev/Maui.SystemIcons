@@ -348,3 +348,11 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+#custom adds
+*.DS_Store
+src/nuget.config
+
+#jetbrains rider is doing some stunts here...
+#.idea
+src/.idea/*
