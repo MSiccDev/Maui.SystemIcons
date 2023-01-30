@@ -1,6 +1,6 @@
 # MSiccDev.Libs.Maui.SystemIcons
 
-##Purpose
+## Purpose
 This helper library makes it easier to access system symbols in .NET MAUI.
 
 Currently supported:
